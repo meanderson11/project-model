@@ -1,0 +1,100 @@
+App
+Users can sign into the app with their email and password
+User can Clock in and Clock Out 
+User can Edit time clocked in and clocked out
+User can Check their Hours
+User can see what their pay will look like for that week of work
+
+Tables:
+Authentication 
+column
+Email
+Password
+user_id
+DOB
+Phone_number
+Hourly pay rate
+
+User Dashboard
+user _id
+First-name
+Last_name
+Username
+Email
+Picture
+Clock In/Out
+clock(in/out)_id
+clock(out)_id
+user_id
+
+Check weekly hours
+User_id
+weekly(hrs)_id
+date
+
+Edit user info
+Edituserinof_id- employees info 
+Editinfo_id - take me to info list change
+User_id
+
+Edit user info list
+Edituser_id
+Email
+Password
+DOB
+Phone_number
+Edituserinfo_id
+Save
+
+Clock Out daily time
+Dailytime_id
+Timestamp_total
+Date
+clock(out)_id
+
+Weekly hours and paytotal
+Hoursandpay_id
+Payrate_total
+weekly(hrs)_id
+Time
+
+Admin users
+Adminuser_id
+First_name
+Last_name
+User_name
+Email 
+Picture
+Pay Rate
+Employeelist_id
+
+Employee list
+Employeelist_id
+editemployee(hrs)_id
+Edit_id
+User_id
+
+Edit hours
+Employeelist_id
+Hoursedit_id
+Time
+save_id
+
+
+
+Relationships
+One to One
+Users to Authentication
+Employer Users to Authentication
+
+One to Many
+Authentication to user Dashboard
+User Dashboard to Clock in/out
+User Dashboard to check hours
+User Dashboard to Edit user Info
+
+
+Many to Many
+Edit User Info to User Dashboard
+Employer users Name list to Edit hours saved
+
